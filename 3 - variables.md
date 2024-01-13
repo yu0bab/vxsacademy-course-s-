@@ -33,6 +33,7 @@ var variableName;
 ```
 And then you have to give it something to store, like so:
 ```
-variableName = 1; //The = sign in programing basically means "assign". So "variableName = 1;" means "assign variableName to 1"
+variableName = 1;
+//The = symbol in programing basically means "assign". So "variableName = 1;" means "assign variableName to 1"
 ```
 So for our 
