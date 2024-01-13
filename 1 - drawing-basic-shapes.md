@@ -16,7 +16,7 @@ The left/right value is called the X vlaue, and up/down is called the Y value.
 There are several shapes you can make with Processing.js, like rectangles, ellipses (or ovals), lines,
 and if you stick with me, even custom shapes! I'll start you off with rectangles.
 
-To make rectangles, you write this (try it out for youself [here]("https://vxsacademy.org/computer-programming/new/pjs")):
+To make rectangles, you write this (try it out for youself [here](https://vxsacademy.org/computer-programming/new/pjs)):
 ```
 rect(200, 200, 20, 20);
 ```
