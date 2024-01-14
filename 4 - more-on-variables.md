@@ -1,5 +1,6 @@
 # Math with variables
-In the last article, I made a stickman and controlled the arm and shoulder heights with variables. Here's the code:
+In the last article, I made a stickman and controlled the arm and shoulder heights with
+variables. Here's the code:
 ```
 fill(0, 0, 0); //face color
 ellipse(200, 70, 100, 100); //face
@@ -23,3 +24,24 @@ line(240, armHeight, 200, shoulderHeight);
 line(160, 380, 200, 280); //legs
 line(240, 380, 200, 280);
 ```
+
+But let's say I wanted to control how far the arms are from the body? The arms are using two
+different values, so we can't use a variable. Well actually, we *can* use a variable! We can
+do a bit of math to get the values we need. Before you continue reading, try making a variable
+for how far the arms are from the body, and use math to get it to work.
+
+So how do we do this? Well, the arms are to the left and right of the body, and the body has
+an X value of 200. We need an arm that is to the left of the body, and one to the right. Here's
+how we do it:
+```
+var armHeight = 260;
+var armDistance = 40; //how far away the arms are from the body
+var shoulderHeight = 140;
+
+line(200-armDistance, armHeight, 200, shoulderHeight); //arm that's to the left of the body
+line(200+armDistance, armHeight, 200, shoulderHeight); //arm that's to the right of the body
+```
+
+Now try experimenting. See what other variables you can use for the stickman. Maybe one for
+the height of his waist, or the size of his head, or maybe even his color. Then try changing
+the variables you make, see what kinds of stickmen you can create.
