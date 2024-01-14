@@ -1,39 +1,69 @@
 # Intro to Variables
 Hey, you wanna see something cool I made?
 ```
-fill(0, 0, 0);
-ellipse(200, 200, 100, 100);
-
+stroke(0, 0, 0);
 strokeWeight(20);
+line(200, 200, 100, 250); //left legs
+line(200, 200, 83, 200);
 line(200, 200, 100, 150);
-line(200, 200, 300, 150);
-line(200, 200, 100, 250);
-line(200, 200, 300, 250);
-```
-It's a stickman! You can see him properly if you copy and paste it [here](https://vxsacademy.org/computer-programming/new/pjs)
-Hmm, actually I want the arms to be longer. So I'll change them like this:
-```
-//code
-```
-No, a bit longer:
-```
-//code
-```
-And now that's too long. This is a bit of a pain, because I have to change both
-numbers every single time. It'd be nice if I only had to change just one number,
-and it did the other for me. Oh wait, there is a way to 
+line(200, 200, 143, 110);
 
-# variables
+line(200, 200, 300, 250); //right legs
+line(200, 200, 318, 200);
+line(200, 200, 300, 150);
+line(200, 200, 262, 110);
+
+fill(0, 0, 0);
+ellipse(200, 200, 100, 100); //body
+
+fill(255, 255, 255);
+noStroke();
+ellipse(180, 210, 20, 20); //eyes
+ellipse(220, 210, 20, 20);
+ellipse(200, 235, 25, 15); //mouth
+```
+It's a spider! You can see him properly if you copy and paste the code [here](https://vxsacademy.org/computer-programming/new/pjs)
+Hmm, actually I want the eyes to be bigger (going for a cute spider). So I'll
+change them like this:
+```
+ellipse(180, 210, 30, 30); //eyes
+ellipse(220, 210, 30, 30);
+```
+No, a bit bigger:
+```
+ellipse(180, 210, 50, 50); //eyes
+ellipse(220, 210, 50, 50);
+```
+And now that's too big. This is a bit of a pain, because I have to change 4
+numbers every single time I want to make a change. It'd be nice if I only had
+to change just one number to control them all. Oh wait, there is a way to do
+that, and that's what this lesson's all about!
+
+# Variables
 Variables in programming are a way to store things so we can use them later on,
 which is useful if you're going to use something over and over again, like in
-the example with the stickman. How you make a variable is like this:
+the example with the spider. How you make a variable is like this:
 ```
-//You can replace "variableName" with whatever you want the name to be, as long as you don't use spaces.
-var variableName;
+var variableName = 1;
+//The = symbol in programing basically means "assign", unlike in math where it means
+//"equals". So "var variableName = 1;" means "make variableName and assign it to 1"
 ```
-And then you have to give it something to store, like so:
+So for our spider eyes, we can make a variable called "eyesSize" and set it to
+the size we want, and then use that size for the eyes. Like this:
 ```
-variableName = 1;
-//The = symbol in programing basically means "assign". So "variableName = 1;" means "assign variableName to 1"
+var eyesSize = 35;
+ellipse(180, 210, eyesSize, eyesSize); //eyes
+ellipse(220, 210, eyesSize, eyesSize);
 ```
-So for our 
+Ah, much better!
+
+Computers read the code top to down, so make sure you make the variable before
+you use it:
+```
+//The computer is thinking "Uh oh, the variable 'eyesSize' wasn't made yet, so
+//I don't know what that means".
+ellipse(180, 210, eyesSize, eyesSize);
+ellipse(220, 210, eyesSize, eyesSize);
+
+var eyesSize = 35;
+```
