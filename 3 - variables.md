@@ -41,8 +41,9 @@ which is useful if you're going to use something over and over again, like in
 the example with the stickman. How you make a variable is like this:
 ```
 var variableName = 1;
-//The = symbol in programing basically means "assign", unlike in math where it means
-//"equals". So "var variableName = 1;" means "make variableName and assign it to 1"
+//The = symbol in programming basically means "set this variable to...", unlike in
+//math where it means "equals". So "var variableName = 1;" means "make variableName
+//and set it to 1"
 ```
 So for our stickman's arms, we can make a variable called "armHeight" and set it to
 the size we want, and then use that size for the eyes. Like this:
