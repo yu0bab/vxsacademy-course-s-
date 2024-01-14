@@ -37,5 +37,9 @@ draw = function(){
   //anything you want to draw a bunch of times a second goes here.
 };
 ```
-We'll talk about it later, but a function is a group of code we want to use. Like a variable, this makes it
-really easy to 
+We'll talk about it later, but a function stores a group of code we can use later, like a variable. The "draw"
+is a special one that will allow us to animate our rocket. So put the rocket and stickman inside a draw function
+(and leave "var y = 100;" outside). Nothing happens. That's because we're not changing the y variable, so the
+rocket stays in place.
+
+# Updating variables
