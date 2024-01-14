@@ -67,3 +67,12 @@ ellipse(220, 210, eyesSize, eyesSize);
 
 var eyesSize = 35;
 ```
+
+Also, I want to be able to easily control the location of the eyes. Variables, to the rescue!
+```
+var eyesSize = 35;
+var eyeHeight = 210;
+
+ellipse(180, eyeHeight, eyesSize, eyesSize); //eyes
+ellipse(220, eyeHeight, eyesSize, eyesSize);
+```
