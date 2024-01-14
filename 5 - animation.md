@@ -76,3 +76,10 @@ draw = function(){
   y = y - 1;
 };
 ```
+Yay, now we're going to the moon! But hold on... why does it look like the rocket's getting smeared?
+That's because we forgot to reset the canvas every time we draw by using "background(255, 255, 255);".
+Add a background command right before the rocket and it should look fine.
+
+# Shorthand
+A pro tip, a short way for typing "y = y - 1;" is "y -= 1;". Same goes with addition, "y = y + 1;" is
+the same as "y += 1;".
