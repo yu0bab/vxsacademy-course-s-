@@ -68,6 +68,6 @@ Also, I want to easily control the height of the shoulders. Variables, to the re
 var armHeight = 260;
 var shoulderHeight = 140;
 
-line(160, armHeight, 200, shoulderHiehgt); //arms
-line(240, armHeight, 200, shoulderHiehgt);
+line(160, armHeight, 200, shoulderHeight); //arms
+line(240, armHeight, 200, shoulderHeight);
 ```
