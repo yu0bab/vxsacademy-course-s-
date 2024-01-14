@@ -43,3 +43,36 @@ is a special one that will allow us to animate our rocket. So put the rocket and
 rocket stays in place.
 
 # Updating variables
+We need to change the y variable if we want to see the rocket move. How do we do that? Like this:
+```
+y = y - 1; //This means "set y to y - 1". So if y was 100, it gets set to 99. And if it's 43, it's set to 42.
+```
+Every time this is called, y is set to y - 1. If we wanted the rocket to go down, we would do "y = y + 1;".
+So now we have:
+```
+var y = 100;
+
+draw = function(){
+  //rocket
+  fill(222, 139, 22);
+  rect(150, 125+y, 100, 165); //rocket body
+  fill(255, 255, 255);
+  ellipse(200, 190+y, 70, 70); //window
+  stroke(115, 75, 7);
+  strokeWeight(10);
+  line(200, 25+y, 150, 130+y); //top part
+  line(200, 25+y, 250, 130+y);
+  
+  //stickman
+  noStroke();
+  fill(0, 0, 0);
+  ellipse(200, 190+y, 50, 50); //face
+  
+  fill(255, 255, 255);
+  ellipse(190, 185+y, 10, 10); //eyes
+  ellipse(210, 185+y, 10, 10);
+  ellipse(200, 200+y, 20, 10);
+
+  y = y - 1;
+};
+```
