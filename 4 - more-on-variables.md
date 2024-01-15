@@ -29,6 +29,7 @@ But let's say I wanted to control how far the arms are from the body? The arms a
 different values, so we can't use a variable. Well actually, we *can* use a variable! We can
 do a bit of math to get the values we need. Before you continue reading, try making a variable
 for how far the arms are from the body, and use math to get it to work.
+(+ is addition, - is subtraction, * is multiplication, and / is division)
 
 So how do we do this? Well, the arms are to the left and right of the body, and the body has
 an X value of 200. We need an arm that is to the left of the body, and one to the right. Here's
