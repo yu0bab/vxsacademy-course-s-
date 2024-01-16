@@ -1,7 +1,7 @@
 # Math With Variables
 In the last article, I made a stickman and controlled the arm and shoulder heights with
 variables. Here's the code:
-```
+```js
 fill(0, 0, 0); //face color
 ellipse(200, 70, 100, 100); //face
 
@@ -34,7 +34,7 @@ for how far the arms are from the body, and use math to get it to work.
 So how do we do this? Well, the arms are to the left and right of the body, and the body has
 an X value of 200. We need an arm that is to the left of the body, and one to the right. Here's
 how we do it:
-```
+```js
 var armHeight = 260;
 var armDistance = 40; //how far away the arms are from the body
 var shoulderHeight = 140;
