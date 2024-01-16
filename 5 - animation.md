@@ -1,7 +1,7 @@
 # Intro
 The little stick figure I made wanted to go to the moon, so I gave him a rocket!
 I even added a y variable so we can change the height the rocket's at:
-```
+```js
 var y = 100;
 
 //rocket
@@ -32,7 +32,7 @@ be animated.
 
 # The Draw Function
 How we make animations in Processing.js is by using the Draw function. You use it like this:
-```
+```js
 draw = function(){
   //anything you want to draw a bunch of times a second goes here.
 };
@@ -44,12 +44,12 @@ rocket stays in place.
 
 # Updating Variables
 We need to change the y variable if we want to see the rocket move. How do we do that? Like this:
-```
+```js
 y = y - 1; //This means "set y to y - 1". So if y was 100, it gets set to 99. And if it's 43, it's set to 42.
 ```
 Every time this is called, y is set to y - 1. If we wanted the rocket to go down, we would do "y = y + 1;".
 So now we have:
-```
+```js
 var y = 100;
 
 draw = function(){
