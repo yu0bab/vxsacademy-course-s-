@@ -13,7 +13,7 @@ ellipse(200, 220, 40, 20);
 So how do we go about resizing his head? Like always, try doing it yourself.
 (+ is addition, - is subtraction, * is multiplication, and / is division)
 
-# Resizing with math - Size
+# Resizing With Math - Size
 So there's two things we need to figure out for the 4 ellipses: their position
 (X and Y) and their dimensions (width and height). I'll start with dimensions
 because it's easier. When you scale any shape by a factor of 2, the width and
@@ -34,7 +34,7 @@ Yay, now the shapes get bigger! But if you mess around with that code, you'll
 see that we're not done yet, because we also need to figure out the position
 of the shapes as well.
 
-# Resizing with math - Position
+# Resizing With Math - Position
 We want to scale at the center of the screen because that looks the nicest.
 The face is at the center, so it won't move. What about everything else? Well,
 we'll need to specify how far left/right and up/down each shape is from the
