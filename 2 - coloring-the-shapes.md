@@ -18,7 +18,7 @@ Also there is a function to set the background color! It goes just like this:
 background(255, 0, 255);
 ```
 
-# Color code
+# Color Code
 The 3 values in the fill and stroke functions are the red, green, and blue values
 respectively. You know how red and blue make purple? Well, that's actually for things
 like paint. Your screen is emmiting light, so it's actually different: red and blue
@@ -58,7 +58,7 @@ fill(0, 255, 255); //cyan
   For these colors, the computer maxes out at 8 digits per value, which is 11111111 in binary, or 255.
 </details>
 
-# Stroke thickness
+# Stroke Thickness
 It's a bit boring that all the shapes's outlines, or strokes, have the same thickness, right?
 What if we wanted to change that? Well, we can! This is how we do it (are you trying out what I
 show you? You should, it will help you learn quicker):
