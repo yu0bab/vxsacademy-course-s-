@@ -2,7 +2,7 @@
 So we can draw shapes onto the canvas, but it's not very exciting without color, is it?
 There are two different things we can color: the outline of the shapes, and the inside.
 Here's how we do it:
-```
+```js
 fill(255, 0, 0); //inside of the shape
 stroke(0, 255, 255); //outline of the shape
 rect(200, 200, 20, 20); //a shape to draw
@@ -14,7 +14,7 @@ You might be wondering what those 3 values do. Try messing with them yourself, s
 if you can figure it out before we talk about them in the next section.
 
 Also there is a function to set the background color! It goes just like this:
-```
+```js
 background(255, 0, 255);
 ```
 
@@ -23,7 +23,7 @@ The 3 values in the fill and stroke functions are the red, green, and blue value
 respectively. You know how red and blue make purple? Well, that's actually for things
 like paint. Your screen is emmiting light, so it's actually different: red and blue
 make magenta when it comes to light. Here's some values to get you started:
-```
+```js
 fill(255, 255, 255); //white
 fill(128, 128, 128); //gray
 fill(0, 0, 0); //black
@@ -62,11 +62,11 @@ fill(0, 255, 255); //cyan
 It's a bit boring that all the shapes's outlines, or strokes, have the same thickness, right?
 What if we wanted to change that? Well, we can! This is how we do it (are you trying out what I
 show you? You should, it will help you learn quicker):
-```
+```js
 strokeWeight(1);
 ```
 The value changes the thickness of the outline (or stroke). And we can also remove the stroke completely!
-```
+```js
 noStroke();
 ```
 Yup, that's right, a command with no values to put in. That happens sometimes.
