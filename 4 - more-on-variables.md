@@ -1,4 +1,4 @@
-# Math with variables
+# Math With Variables
 In the last article, I made a stickman and controlled the arm and shoulder heights with
 variables. Here's the code:
 ```
