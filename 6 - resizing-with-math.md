@@ -1,7 +1,11 @@
+# Math Warning
+**WARNING:** Lots of math in this article. If you want to skip and go to the
+next one, you have my permission.
+
 # Intro
 So let's say I want to resize the stickman's head. First we'll need his head
 (I put his face in the center so it will be easier to do this):
-```
+```js
 fill(0, 0, 0); //face color
 ellipse(200, 200, 100, 100); //face
 
@@ -19,7 +23,7 @@ So there's two things we need to figure out for the 4 ellipses: their position
 because it's easier. When you scale any shape by a factor of 2, the width and
 height of that shape also go up by a factor of 2. In other words, we multiply
 the width and height by 2:
-```
+```js
 var scaleFactor = 2;
 
 fill(0, 0, 0); //face color
@@ -44,7 +48,7 @@ is at 180, which is 200 - 180 which is 20 pixels to the left. What happens when
 we change the scale factor? Well, so does this amount of pixels to the left.
 That means that the equation for the X position is 200-20*scaleFactor. And it's
 the same for the Y, so we have:
-```
+```js
 var scaleFactor = 2;
 
 fill(0, 0, 0); //face color
