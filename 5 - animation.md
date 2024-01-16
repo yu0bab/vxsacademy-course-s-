@@ -30,7 +30,7 @@ the y variable) But how do we actually launch the rocket? So far we can only dra
 way to draw a bunch of pictures every second, and change the y variable a little bit every time, so it can
 be animated.
 
-# The Draw function
+# The Draw Function
 How we make animations in Processing.js is by using the Draw function. You use it like this:
 ```
 draw = function(){
@@ -42,7 +42,7 @@ is a special one that will allow us to animate our rocket. So put the rocket and
 (and leave "var y = 100;" outside). Nothing happens. That's because we're not changing the y variable, so the
 rocket stays in place.
 
-# Updating variables
+# Updating Variables
 We need to change the y variable if we want to see the rocket move. How do we do that? Like this:
 ```
 y = y - 1; //This means "set y to y - 1". So if y was 100, it gets set to 99. And if it's 43, it's set to 42.
