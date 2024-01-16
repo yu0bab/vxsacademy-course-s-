@@ -2,7 +2,7 @@
 About the stickman, I decided to name him "Preston John Smith", or simply "Preston".
 I want to make it so that Preston says his name. We can do that by using the text
 command. It goes like this:
-```
+```js
 //NOTE: if you don't add the "" around the text you want, the computer will think
 //it's supposed to be a variable.
 text("text", 200, 200);
@@ -21,13 +21,13 @@ corner, but with text, it's the bottom left. Weird, I know, but I don't make the
 
 But the text right now is too small for me. How do we change the size. We just use the
 textSize command, like this:
-```
+```js
 //the value is the size we want for the text.
 textSize(20);
 ```
 
 So now I can make Preston say his name!
-```
+```js
 fill(3, 166, 166);
 textSize(20);
 text("Hi! I'm Preston.", 150, 120);
@@ -46,12 +46,12 @@ ellipse(200, 220, 40, 20);
 
 # More On Text
 Before you ask me, yes, you can put text in a variable.
-```
+```js
 var txt = "I'm in a variable!";
 ```
 
 If you want to add quotation marks in your text, you can do it like this:
-```
+```js
 var ok = "I'm using \"quotation marks\" in a string";
 
 //the computer thinks that "I'm using " and " in a string" are separate strings of text,
@@ -61,7 +61,7 @@ var notOk = "I'm using "quotation marks" in a string";
 
 And another thing, if you want a string of text to have multiple lines, there's two ways
 you can do it:
-```
+```js
 // "\n" adds a new line
 var slashNMethod = "this \nhas \nmultiple \nlines";
 
