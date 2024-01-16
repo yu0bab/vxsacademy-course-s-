@@ -17,7 +17,7 @@ There are several shapes you can make with Processing.js, like rectangles, ellip
 and if you stick with me, even custom shapes! I'll start you off with rectangles.
 
 To make rectangles, you write this (try it out for youself [here](https://vxsacademy.org/computer-programming/new/pjs)):
-```
+```js
 rect(200, 200, 20, 20);
 ```
 What do those numbers mean? Try changing them, see what they do. (PRO TIP: if you click one of the numbers,
@@ -34,7 +34,7 @@ but you can change that by clicking on the "settings" button under your code.
 
 So that's a rectangle, but that's not very exciting all by itself. So let me show you how to make ellipses
 as well (again, try it out for yourself):
-```
+```js
 ellipse(200, 200, 20, 20);
 ```
 If you play with those numbers, you'll see that they work in the same way. First one's the X value, second
@@ -43,7 +43,7 @@ for the rectangle, the X and Y describe the top-left corner, but for the ellipse
 Keep that in mind when using rectangles and ellipses.
 
 One last shape I want to talk about, lines. Here's what you write:
-```
+```js
 line(100, 100, 300, 300);
 ```
 The first two numbers (AKA values) are the same as the other shapes, they describe the X and Y. But lines don't
@@ -56,7 +56,7 @@ two shapes, but it makes sense for a line.
 # Comments
 If you put a lot of rectangles and ellipses down, you might lose track of what draws what. We have a niftly
 little tool that allows us to organize our code better, called comments. You write them like this:
-```
+```js
 //this is a comment
 ```
 A comment is a note for programmers so they know what certain chunks of code do. The computer ignores
