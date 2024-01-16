@@ -43,37 +43,3 @@ ellipse(180, 190, 20, 20); //eyes
 ellipse(220, 190, 20, 20);
 ellipse(200, 220, 40, 20);
 ```
-
-# More On Text
-Before you ask me, yes, you can put text in a variable.
-```js
-var txt = "I'm in a variable!";
-```
-
-If you want to add quotation marks in your text, you can do it like this:
-```js
-var ok = "I'm using \"quotation marks\" in a string";
-
-//the computer thinks that "I'm using " and " in a string" are separate strings of text,
-//and "quotation marks" is a variable. I mean, how is it supposed to know otherwise?
-var notOk = "I'm using "quotation marks" in a string";
-```
-
-And another thing, if you want a string of text to have multiple lines, there's two ways
-you can do it:
-```js
-// "\n" adds a new line
-var slashNMethod = "this \nhas \nmultiple \nlines";
-
-// doing a \ and then adding a new line is ok
-var slashMethod = "this\
-has\
-multiple\
-lines";
-
-//this makes the computer freak out.
-var notOk = "this
-has
-multiple
-lines";
-```
