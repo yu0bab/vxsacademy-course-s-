@@ -57,3 +57,5 @@ ellipse(200-20*scaleFactor, 200-10*scaleFactor, 20*scaleFactor, 20*scaleFactor);
 ellipse(200+20*scaleFactor, 200-10*scaleFactor, 20*scaleFactor, 20*scaleFactor);
 ellipse(200+0*scaleFactor, 200+20*scaleFactor, 40*scaleFactor, 20*scaleFactor);
 ```
+Yay, now we can change the size of shapes! I would encourage you to make your own
+drawings to resize, and see what else you can do with math.
