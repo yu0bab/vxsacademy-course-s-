@@ -19,5 +19,5 @@ programs, even Artificial Intelligence which will take over the world.
 # What will I need?
 For this course, all you will need is a computer, and [a programming environment](https://vxsacademy.org/computer-programming/new/pjs), which is just a place to write programs.
 
-Other than that, you will also need typing skills and a good understanding of math and logic, because programming uses
-a **lot** of it! But don't worry, we'll keep it as simple as possible, and explain everything along the way.
+Other than that, you will also need typing skills and a basic understanding of math. But don't worry, I'll keep the math as
+simple as possible, and have the explanations easy to understand.
