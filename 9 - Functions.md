@@ -26,4 +26,10 @@ Try out that code. You'll notice that nothing happens, because we need to tell t
 //make sure that you have the "var drawPreston = ..." part before this, or else the computer won't get what you mean
 drawPreston();
 ```
-Hey cool, it's drawing Preston again! And what's better, we can run the function again to get 2 Prestons.
+Hey cool, it's drawing Preston again! And what's better, we can run the function again to get 2 Prestons. But if you were to try that (and I would encourage you to), you would notice that you only see 1 Preston. Why? Well, think about it: we didn’t change X or Y for the second Preston, so they were drawn on top of each other. How can we change the X and Y values?
+
+# Parameters
+For the rect and ellipse functions, we can put in some numbers describing the position and size of them. With fill and stroke, we can put in 3 numbers describing the color we want. The numbers you put into functions are called parameters. This is how you can make parameters for custom functions:
+```
+var functionName = function(x, y){}
+```
