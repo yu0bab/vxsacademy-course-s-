@@ -26,3 +26,4 @@ Try out that code. You'll notice that nothing happens, because we need to tell t
 //make sure that you have the "var drawPreston = ..." part before this, or else the computer won't get what you mean
 drawPreston();
 ```
+Hey cool, it's drawing Preston again! And what's better, we can run the function again to get 2 Prestons.
