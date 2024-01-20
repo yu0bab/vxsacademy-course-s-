@@ -7,3 +7,22 @@ In a way, we use functions in our daily lives. When you make breakfast, you prob
 
 # Custom Functions
 I want to make a clone of Preston. **[add the code for him here]** I could copy and paste the code for him, but what if I want to make a change to both? And what if I want to add a third or fourth Preston? It'd be nice if we could make our own functions to make this easier.
+
+Guess what, we *can* have custom functions! Here's how we do it:
+```
+//It's like the draw function when we were doing animation, but with var at the beginning, and a different name. We have var at the beginning because functions are technically a variable.
+var functionName = function(){
+    //put your code here
+};
+```
+We're going to make a function that draws Preston, like so:
+```
+var drawPreston = function(){
+    //code for Preston
+};
+```
+Try out that code. You'll notice that nothing happens, because we need to tell the computer to actually use the drawPreston function (programmers like saying that we call, or run, the function). We do that in the same way we run the rect or ellipse function:
+```
+//make sure that you have the "var drawPreston = ..." part before this, or else the computer won't get what you mean
+drawPreston();
+```
