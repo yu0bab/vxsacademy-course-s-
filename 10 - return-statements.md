@@ -15,17 +15,17 @@ text("that it doesn't even show on the screen!", 5, 140);
 ```
 Hmm, I'm doing a lot of multiplying by 1200 in this code. It'd be nice to be able to make something that does all this for me.
 
-# Return Functions
-A return function is just like a normal function: it's a chunk of code with a name so you can use it later. Only difference is that instead of drawing things like normal functions, it calculates numbers for us (I should get some return functions to do my homework, hehehe). Here's how you make and use one:
+# Return Satements
+A return statement is something you can use to output a value out of a function. Here's how you make and use one:
 ```js
-var returnFunction = function(){ //you can use paramters in it just like with normal functions
-  return 42; //change the 42 to whatever you want this to spit out. It can also make it spit out text if you want.
+var functionName = function(){ //you can use paramters in it just like with normal functions
+  return 42; //change the 42 to whatever you want this to output. It can also make it spit out text if you want.
 };
 
 fill(0, 0, 0);
-text(returnFunction(), 20, 20); //you should see 42 on the screen, because that's what we told the return function to spit out.
+text(functionName(), 20, 20); //you should see 42 on the screen, because that's what we told the return statement to output.
 ```
-So I'm going to make a return function called numOfCandies that will tell us how many candies he can eat in however many hours we give it, like so:
+So I'm going to make a return statement called numOfCandies that will tell us how many candies he can eat in however many hours we give it, like so:
 ```js
 var numOfCandies = function(numOfHours){
   return 1200*numOfHours;
@@ -42,4 +42,4 @@ fill(0, 0, 255);
 text("Wow, Preston can eat so much candy in a year", 5, 120);
 text("that it doesn't even show on the screen!", 5, 140);
 ```
-This probably isn't the best way to use return functions, but as you do more complex calculations in your programs, you'll learn to love return functions.
+This probably isn't the best example, but as you do more complex calculations in your programs, you'll learn to love return statements.
