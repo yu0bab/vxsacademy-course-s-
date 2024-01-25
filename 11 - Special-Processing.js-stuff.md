@@ -28,4 +28,4 @@ mouseReleased = function(){
 ```
 
 # Special variables
-Just like how there's special functions like draw and mousePressed, there's also special variables! Here's
+Just like how there's special functions like draw and mousePressed, there's also special variables! mouseX and mouseY will give you the x and y positions of the cursor. Pretty fun to mess around with.
