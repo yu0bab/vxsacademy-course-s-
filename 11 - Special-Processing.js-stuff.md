@@ -1,5 +1,5 @@
 # Draw function
-Remember when we were talking about the draw function, and how we can animate with it? You might be thinking "why does the draw function draw every frame, but the other ones don't?". Well, Processing.js behind the scenes has this code:
+Remember when we were talking about the draw function, and how we can animate with it? You might be thinking "why does the draw function draw every frame, but the other ones don't?". Well, behind the scenes, Processing.js has some code that looks something like this:
 ```
 var draw = function(){
   //blank and boring
