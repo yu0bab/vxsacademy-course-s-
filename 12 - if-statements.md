@@ -7,14 +7,18 @@ var ballSpeed = 2;
 draw = function(){
     background(255, 255, 255);
 
+    stroke(0);
     strokeWeight(1);
     fill(125);
     ellipse(ballX, 200, 50, 50); //ball
 
     ballX += ballSpeed; //move the ball according to the speed
 
+    stroke(0, 0, 255);
     strokeWeight(20);
     line(390, 100, 390, 300); //right portal
+
+    stroke(0, 255, 0);
     line(10, 100, 10, 300); //left portal
 };
 ```
@@ -61,9 +65,13 @@ draw = function(){
         ballX = 400;
     }
 
+    stroke(0, 0, 255);
     strokeWeight(20);
     line(390, 100, 390, 300); //right portal
+
+    stroke(0, 255, 0);
     line(10, 100, 10, 300); //left portal
 };
 ```
-Now see what you can make with if statements, and **IF** you do, you'll be able to make some cool stuff!
+Yay, both portals work! 
+See what you can make with if statements, and **IF** you do, you'll be able to make some cool stuff!
