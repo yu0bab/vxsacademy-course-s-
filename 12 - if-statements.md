@@ -1,7 +1,22 @@
 # Intro
-Hey, check out what I'm working on. This code makes 2 portals, and there's a ball I want to go through them. **If** I can figure out how to make this work, this will be pretty cool!
+Hey, check out what I'm working on. This code makes 2 portals, and there's a ball I want to go through them. **IF** you try out the code, you'll see that it doesn't work quite yet. **IF** I can figure out how to make this work, this will be pretty cool!
 ```js
-//write code for a portal
+var ballX = 200;
+var ballSpeed = 2;
+
+draw = function(){
+    background(255, 255, 255);
+
+    strokeWeight(1);
+    fill(125);
+    ellipse(ballX, 200, 50, 50); //ball
+
+    ballX += ballSpeed; //move the ball according to the speed
+
+    strokeWeight(20);
+    line(390, 100, 390, 300); //right portal
+    line(10, 100, 10, 300); //left portal
+};
 ```
 So let’s see, I want the ball to go to the left portal **IF** it went through the right portal, and the other way around. So far all of the code we've been writing will always run, no matter what. How can we get certain pieces of code to only run in specific cases? (Hint: **IF** you saw that I'm writing the word **IF** in bold letters, you might see where this is going)
 
@@ -13,4 +28,42 @@ if(condition){
     //code to run
 }
 ```
-If the condition is true, the code will run, or else it will ignore the code inside. But how do you write conditions?
+If the condition is true, the code will run, or else it will ignore the code inside. But how do you write conditions? We'll talk a bit more about them later, but one of the symbols we use is the > symbol (hold Shift and press the button right below the L key on your keyboard). This symbol, called the "greater than" symbol sees if the number on the left is greater than the number on the right. We can use this symbol to see if the ball hits the right portal, because the X position will be greater than the width of the canvas, which is 400:
+```js
+if(ballX > 400){
+    ballX = 0;
+}
+```
+Put that code into the draw function, and you'll see that the ball goes through the portal! Now change "ballSpeed" to be -2 (that'll make it go the other way), and you'll see that now it's not working, because we didn't tell the computer what happens when the ball goes through the left portal. Let's fix that! We can use the < symbol (it's to the left of the > symbol on your keyboard), which is called the "less than" symbol. As you might have guessed, it sees if the number on the left is *less than* the number on the right. Let's use it to see if the ball goes through the left portal, meaning its X position will be less than 0:
+```js
+if(ballX < 0){
+    ballX = 400;
+}
+```
+Now let's put it all together!
+```js
+var ballX = 200;
+var ballSpeed = 2;
+
+draw = function(){
+    background(255, 255, 255);
+
+    strokeWeight(1);
+    fill(125);
+    ellipse(ballX, 200, 50, 50); //ball
+
+    ballX += ballSpeed; //move the ball according to the speed
+
+    if(ballX > 400){ //if the ball goes into the right portal, go to the left portal
+        ballX = 0;
+    }
+    if(ballX < 0){ //if the ball goes into the left portal, go to the right portal
+        ballX = 400;
+    }
+
+    strokeWeight(20);
+    line(390, 100, 390, 300); //right portal
+    line(10, 100, 10, 300); //left portal
+};
+```
+Now see what you can make with if statements, and **IF** you do, you'll be able to make some cool stuff!
