@@ -73,5 +73,6 @@ draw = function(){
     line(10, 100, 10, 300); //left portal
 };
 ```
-Yay, both portals work! 
+Yay, both portals work! Actually, our code is broken a bit, but I'll discuss that later. For now, they work just fine.
+
 See what you can make with if statements, and **IF** you do, you'll be able to make some cool stuff!
