@@ -14,6 +14,7 @@ if(profCobraIsHuman){
   //profCobraIsHuman is false, so nothing will run in here
 }
 ```
+
 One of the ways we can make booleans is by comparing numbers. We used 2 comparing symbols when making the portals: < and >. Another one is <=, meaning "less than or equal to". As you might guess, it sees if the number on the left is less than or equal to the one on the right, as so:
 ```js
 if(41 <= 42){
@@ -48,7 +49,7 @@ Make sure you're putting a boolean or a comparison of 2 numbers (which is just a
 ```js
 //none of these make sense, but the computer doesn't care.
 
-//what does "If 4" mean? lol
+//what does "if 4" mean? lol
 if(4){
   //this runs for some reason
 }
@@ -58,6 +59,8 @@ if("purple"){
   //this runs for some reason
 }
 ```
+
+ Yay, now we know booleans! Another awesome tool under our toolbelt.
 
 # Bonus Stuff
 When it comes to === and !=, you can use them with text as well! Very big day for people who like comparing strings of text.
@@ -76,3 +79,4 @@ if(name === "preston"){
   //Javascript is case-sensitive, meaning uppercase letters and lowercase letters are treated as different things, so this won't run.
 }
 ```
+And if you ever wonder if you can or can't do something in Javascript, you are more than welcome to try it out for yourself, and see if it works. It's a great way of learning programming, or anything really.
