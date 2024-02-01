@@ -47,7 +47,7 @@ if(100 !== 78){ //checks if two numbers are NOT equal. I don't know why there's 
 
 Make sure you're putting a boolean or a comparison of 2 numbers (which is just a boolean in disguise) in an if statement, because putting anything else doesn't make sense:
 ```js
-//none of these make sense, but the computer doesn't care.
+//these don't make sense, but the computer doesn't care.
 
 //what does "if 4" mean? lol
 if(4){
