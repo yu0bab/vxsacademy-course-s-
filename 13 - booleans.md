@@ -63,7 +63,7 @@ if("purple"){
  Yay, now we know booleans! Another awesome tool under our toolbelt.
 
 # Bonus Stuff
-When it comes to === and !=, you can use them with text as well! Very big day for people who like comparing strings of text.
+When it comes to === and !==, you can use them with text as well! Very big day for people who like comparing strings of text.
 ```js
 var name = "Preston";
 
