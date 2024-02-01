@@ -14,7 +14,7 @@ if(profCobraIsHuman){
   //profCobraIsHuman is false, so nothing will run in here
 }
 ```
-And like in math how you have expressions, like 2 + 3 * 5, there's also boolean expressions. We used 2 earlier when making the portals. < and > are boolean expressions. Another one is <=, meaning "less than or equal to". As you might guess, it sees if the number on the left is less than or equal to the one on the right, as so:
+One of the ways we can make booleans is by comparing numbers. We used 2 comparing symbols when making the portals: < and >. Another one is <=, meaning "less than or equal to". As you might guess, it sees if the number on the left is less than or equal to the one on the right, as so:
 ```js
 if(41 <= 42){
   //41 is less than or equal to 42, so this will run.
@@ -26,5 +26,53 @@ if(42 <= 42){
 
 if(43 <= 43){
   //43 is NOT less than or equal to 43, so this will not run.
+}
+```
+
+There's 3 more, let me show you them:
+```js
+if(5 >= 6){ //checks if the number on the left is greater or equal to the one on the right.
+  //5 is not greater than or equal to 6, so this won't run.
+}
+
+if(10 === 10){ //checks if the two numbers are equal. Remember how = means "set this variable to"? The reason why this is 3 equal signs is so the computer doesn't get confused (computers get confused very easily)
+  //10 equals 10, so this will run.
+}
+
+if(100 !== 78){ //checks if two numbers are NOT equal. I don't know why there's a ! in there. Sometimes javascript is just weird like that.
+  //100 doesn't equal 78, so this will run.
+}
+```
+
+Make sure you're putting a boolean or a comparison of 2 numbers (which is just a boolean in disguise) in an if statement, because putting anything else doesn't make sense:
+```js
+//none of these make sense, but the computer doesn't care.
+
+//what does "If 4" mean? lol
+if(4){
+  //this runs for some reason
+}
+
+//Again, what does 'if "purple"' mean?
+if("purple"){
+  //this runs for some reason
+}
+```
+
+# Bonus Stuff
+When it comes to === and !=, you can use them with text as well! Very big day for people who like comparing strings of text.
+```js
+var name = "Preston";
+
+if(name === "Preston"){
+  //name equals "Preston", so this will run.
+}
+
+if(name !== "Prof. Cobra"){
+  //name doesn't equal "Prof. Cobra", so this will run.
+}
+
+if(name === "preston"){
+  //Javascript is case-sensitive, meaning uppercase letters and lowercase letters are treated as different things, so this won't run.
 }
 ```
