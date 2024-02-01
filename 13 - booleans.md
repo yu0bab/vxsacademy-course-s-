@@ -14,4 +14,17 @@ if(profCobraIsHuman){
   //profCobraIsHuman is false, so nothing will run in here
 }
 ```
-And like in math 
+And like in math how you have expressions, like 2 + 3 * 5, there's also boolean expressions. We used 2 earlier when making the portals. < and > are boolean expressions. Another one is <=, meaning "less than or equal to". As you might guess, it sees if the number on the left is less than or equal to the one on the right, as so:
+```js
+if(41 <= 42){
+  //41 is less than or equal to 42, so this will run.
+}
+
+if(42 <= 42){
+  //42 is less than or equal to 42, so this will run.
+}
+
+if(43 <= 43){
+  //43 is NOT less than or equal to 43, so this will not run.
+}
+```
