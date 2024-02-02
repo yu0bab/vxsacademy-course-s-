@@ -2,41 +2,51 @@
 In the previous article, I talked about booleans and how to make them with comparison symbols (like < and ===). But let's say we want to combine booleans together, like how you can combine numbers together. How do we do that? One of the ways we can do that is checking if one boolean OR another is true. How we do that is by typing "||" (hold shift and press the \ key, which should be above the enter key).
 ```js
 //It's looking to see if one OR the other boolean is true
+fill(255, 125, 0);
 
 if(false || false){
   //none of them are true, so this won't run
+  text("false OR false", 100, 50);
 }
 
 if(true || false){
   //one of them is true, so this will run
+  text("true OR false", 100, 100);
 }
 
 if(false || true){
   //one of them is true, so this will run
+  text("false OR true", 100, 150);
 }
 
 if(true || true){
   //both true, so this will run
+  text("true OR true", 100, 200);
 }
 ```
 Another one checks if both the first AND the second booleans are true. We do that by typing "&&" (hold shift and press the 7 key).
 ```js
 //It's looking to see if both the first AND the second booleans are true
+fill(125, 70, 0); //running out of interesting colors to use lol
 
 if(false && false){
   //none of them are true, so this won't run
+  text("false AND false", 100, 50);
 }
 
 if(true && false){
   //only one of them are true, so this won't run
+  text("true AND false", 100, 100);
 }
 
 if(false && true){
   //only one of them is true, so this won't run
+  text("false AND true", 100, 150);
 }
 
 if(true && true){
   //both are true, so this will run
+  text("true AND true", 100, 200);
 }
 ```
 
