@@ -10,7 +10,7 @@ draw = function(){
     stroke(0);
     strokeWeight(1);
     fill(125);
-    ellipse(ballX, 200, 50, 50); //ball
+    ellipse(ballX, 200, 60, 60); //ball
 
     ballX += ballSpeed; //move the ball according to the speed
 
@@ -54,7 +54,7 @@ draw = function(){
 
     strokeWeight(1);
     fill(125);
-    ellipse(ballX, 200, 50, 50); //ball
+    ellipse(ballX, 200, 60, 60); //ball
 
     ballX += ballSpeed; //move the ball according to the speed
 
