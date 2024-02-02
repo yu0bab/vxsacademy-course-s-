@@ -41,4 +41,33 @@ if(true && true){
 ```
 
 # Example
-Remember the portal I made, and how I said that there's a problem with the code?
+Remember the portal I made, and how I said that there's a problem with the code? Here's the code for it in case you forgot:
+```js
+var ballX = 200;
+var ballSpeed = 2;
+
+draw = function(){
+    background(255, 255, 255);
+
+    strokeWeight(1);
+    fill(125);
+    ellipse(ballX, 200, 60, 60); //ball
+
+    ballX += ballSpeed; //move the ball according to the speed
+
+    if(ballX > 400){ //if the ball goes into the right portal, go to the left portal
+        ballX = 0;
+    }
+    if(ballX < 0){ //if the ball goes into the left portal, go to the right portal
+        ballX = 400;
+    }
+
+    stroke(0, 0, 255);
+    strokeWeight(20);
+    line(390, 100, 390, 300); //right portal
+
+    stroke(0, 255, 0);
+    line(10, 100, 10, 300); //left portal
+};
+```
+Let's say that we want the ball 
