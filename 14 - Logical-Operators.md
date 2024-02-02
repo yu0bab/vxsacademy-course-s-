@@ -149,7 +149,7 @@ draw = function(){
 Ah finally, it's working as it should! It almost looks the same, but our code is written a little smarter, so it's harder to break. With if statements, booleans, and now logical operators, you can make a lot of complex behavior!
 
 # Bonus
-You can use multiple logical operators at once, just like with math operators:
+You can use multiple logical operators at once, just like with math operators like + and -:
 ```js
 var rosesAreRed = true;
 var violetsAreBlue = true;
