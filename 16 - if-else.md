@@ -25,3 +25,13 @@ if(hasPancakes){
 }
 ```
 The if statement will run **IF** the boolean is true, **ELSE** run the else statement. So in the pancakes example, the text will be sad that there’s no pancakes.
+
+With the example with Preston, we can congratulate him if he gets it right, else, tell him to guess again:
+```js
+if(hisGuess === ourNumber){
+    text("Yay, you got it!", 200, 200);
+}else{
+    text("No, guess again.", 200, 200);
+}
+```
+Preston is still bad at reading minds, but at least you learned more about programming! 
