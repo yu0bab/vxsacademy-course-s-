@@ -65,7 +65,7 @@ if(true){
     ellipse(150, 225, 20, 20);
 }
 ```
-And that worked! Right now I just showed you a technique for debugging: replacement. Temporarily replacing code with something you know will work is a useful way of figuring out where the problem is. Just make sure that you fully understand what will happen if you temporarily replace code like this, otherwise you might confuse yourself with this trick. But anyways, we now know that the problem is with the condition. I'm going to put the condition back in, and get some println functions to tell me when `mouseX > 125 && mouseX < 275`, and when `mouseY > 375 && mouseY > 325` is true separately:
+And that worked! Right now I just showed you a technique for debugging: replacement. Temporarily replacing code with something you know will work is a useful way of figuring out where the problem is. Just make sure that you fully understand what will happen if you temporarily replace code like this, otherwise you might confuse yourself with this trick. But anyways, we now know that the problem is with the condition. I'm going to put the condition back in, and get some println functions to tell me when `mouseX > 125 && mouseX < 275` is true, and when `mouseY > 375 && mouseY > 325` is true separately:
 ```js
 //the ( ) symbols (called parentheses) around the conditions are telling the computer that it needs to figure out the conditions first before it adds it to the string. Without the parentheses, the computer gets confused.
 println("X part of the condition: " + (mouseX > 125 && mouseX < 275));
