@@ -113,3 +113,12 @@ draw = function() {
 };
 ```
 And now not only is the door working, but now you know how to debug your programs to fix problems you face! Knowing how to do that will open many doors to you (did I make a door in Processing.js just to say that joke? Maybe hehehe)
+
+# Bonus Tips for Debugging
+There's many useful things you can do to help you with debugging. For example, you could tell the problem to one of your stuffed animals. The act of simply saying your problem in words helps a lot of programmers to figure out what the problem is.
+
+Another trick is using the functions like rect, ellipse, text, etc. to display information visually, instead of using println. Like they say, a picture is worth a thousand words
+
+And here's a trick I like to use: If I don't know where the problem is, I comment out code that might be the problem (Pro Tip: you can select the text you comment out, and do ctrl + / to comment it instantly. You can do the same thing to uncomment it). If I don't see the problem anymore, I must have commented it out, so I found where the bug is! Just make sure that when you do this, you're not causing other problems unintentionally.
+
+One last trick, if I have problem code that's running in a draw function, sometimes I'll replace `draw = function(){` with `mousePressed = function(){`. That way, I can go through every frame one at a time, and click to go to the next frame.
