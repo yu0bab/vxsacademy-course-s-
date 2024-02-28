@@ -16,7 +16,7 @@ Let's print it out just to see what it says:
 ```js
 println(favActivities);
 ```
-Hmm, it prints out as "Programming,Math,Science,Art,Gaming". That's great and all if I want everything in the list, but what if I only want the first thing in the list? How you do that is you add [] at the end, and inside of those square brackets you put in the order number of what we want. We want the first thing in the list, so let's put in the number 1:
+Hmm, it prints out as "Programming,Math,Science,Art,Gaming". That's great and all if I want everything in the list, but what if I only want the first thing in the list? How you do that is you add [] at the end, and inside of those square brackets you put in the order number (or index) of what we want. We want the first thing in the list, so let's put in the number 1:
 ```js
 println(favActivities[1]); //prints out "Math"
 ```
