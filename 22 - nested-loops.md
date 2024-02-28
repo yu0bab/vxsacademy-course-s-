@@ -24,4 +24,4 @@ for(var j = 0; j < 400; j += 20){
     drawRow(j);
 }
 ```
-Does that make a little more sense now? We're looping over the drawRow function, which also has a for loop in it.
+Does that make a little more sense now? We're looping over the drawRow function, which also has a for loop in it. If you want to get a better understanding of it, try making some nested for loops yourself.
