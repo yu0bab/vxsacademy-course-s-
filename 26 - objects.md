@@ -15,7 +15,7 @@ var bookRatings = [
 ];
 
 var author = "Bobert Rossert"; //No, not the Bobert we all know and love. A different bobert.
-var numOfPages = 271828;
+var numOfPages = 271;
 var audience = "Not for people who work for NASA";
 var genre = "Science nonfiction. Not to be confused with science fiction.";
 ```
