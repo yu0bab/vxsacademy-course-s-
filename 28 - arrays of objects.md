@@ -1,8 +1,9 @@
 # Intro
 Remember the object I made for Preston's cat, Oreo? Well I think the other cats feel left out, so I made a program that has all of Preston's cats on it:
 ```js
-var cat = function(x, y, furCol, name){
+var cat = function(x, y, furCol, name){ //furCol is short for "fur color"
     //head
+    strokeWeight(1);
     fill(furCol); //remember when I was talking about variables and how you can store colors in variables with the color function?
     ellipse(x, y, 100, 100);
     
@@ -31,7 +32,18 @@ var cat = function(x, y, furCol, name){
 
     //name
     fill(0, 0, 0);
-    text(name, x-30, y-58);
+    text(name, x-34, y-58);
 };
-```
 
+cat(100, 100, color(66, 41, 20), "Oreo");
+cat(300, 100, color(92, 47, 5), "Chester");
+cat(100, 300, color(191, 97, 15), "Jasper");
+cat(300, 300, color(90, 99, 32), "Thomas");
+```
+Hmm, look at the last 4 lines of the code. I can't help but to notice how repeatable that is. And when I see repeatable code, I can't help but to wonder if I can use a loop. We have 4 different things to store for each cat (x, y, color, and name), so I'll make 4 different arrays to store it all:
+```js
+var catXvalues = [100, 300, 100, 300];
+var catYvalues = [100, 100, 300, 300];
+var catColValues = [color(66, 41, 20), color(92, 47, 5), color(191, 97, 15), color(90, 99, 32)];
+var catNameValues = ["Oreo", "Chester", "Jasper", "Thomas"];
+```
