@@ -72,3 +72,11 @@ var shoulderHeight = 140;
 line(160, armHeight, 200, shoulderHeight); //arms
 line(240, armHeight, 200, shoulderHeight);
 ```
+
+One last thing, you can actually store colors in variables with the color command, which is awesome:
+```js
+var red = color(255, 0, 0);
+
+fill(red); //the rectangle will be colored red
+rect(0, 0, 20, 20);
+```
