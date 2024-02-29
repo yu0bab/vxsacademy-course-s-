@@ -68,7 +68,7 @@ var array = {
     "length": 3
 };
 ```
-Weird, right? But back to topic, you get the properties of objects by typing the object name, a ".", and then the property you want:
+Weird, right? But enough blowing your mind, let's get back to getting the properties of objects. You get properties by typing the object name, a ".", and then the property you want, just like with ".length":
 ```js
 println(prestonsBook.title); //returns "Not so Fantastic Bugs and Where to Find Them"
 println(prestonsBook.author); //returns "Bobert Rossert"
