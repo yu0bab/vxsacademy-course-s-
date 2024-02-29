@@ -1,4 +1,4 @@
-# intro
+# Intro
 In the last lesson, we made an object describing Preston's book (keep in mind that it's an imaginary book):
 ```js
 var prestonsBook = {
@@ -17,8 +17,17 @@ var prestonsBook = {
     },
 
     author: "Bobert Rossert",
-    numOfPages: 271828,
+    numOfPages: 271,
     audience: "Not for people who work for NASA",
     genre: "Science nonfiction. Not to be confused with science fiction."
 };
+```
+Bobert Rossert saw this object describing his book, and he would actually prefer that we include his middle name, Normert, which makes his full name "Bobert Normert Rossert". We could simply edit the code, but if we want to make a book website for example, I doubt authors would want to go into the code to make updates to their book. So how else can we update the author name parameter?
+
+# Modifying Objects
+Remember how we update variables, or items in arrays? If not, you do it like this:
+```js
+var numOfCats = 4; //preston has 4 cats
+
+numOfCats = 5;
 ```
