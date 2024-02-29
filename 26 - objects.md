@@ -50,7 +50,7 @@ var prestonsBook = {
     },
 
     author: "Bobert Rossert",
-    numOfPages: 271828,
+    numOfPages: 271,
     audience: "Not for people who work for NASA",
     genre: "Science nonfiction. Not to be confused with science fiction."
 };
@@ -72,7 +72,7 @@ Weird, right? But enough blowing your mind, let's get back to getting the proper
 ```js
 println(prestonsBook.title); //returns "Not so Fantastic Bugs and Where to Find Them"
 println(prestonsBook.author); //returns "Bobert Rossert"
-println(prestonsBook.numOfPages); //returns 271828
+println(prestonsBook.numOfPages); //returns 271
 
 //if you want to get the properties of anything in the "ratings" property, you have to do it like this:
 println(prestonsBook.ratings.average); //returns 3
