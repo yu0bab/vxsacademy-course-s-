@@ -55,4 +55,28 @@ var prestonsBook = {
     genre: "Science nonfiction. Not to be confused with science fiction."
 };
 ```
-Ok so that's great and all, but how do I access this information on the book? Remember how you get the length of an array? You type the array name and then ".length" at the end. The reason why is because arrays are secretly objects.
+Ok so that's great and all, but how do I access this information on the book? Remember how you get the length of an array? You type the array name and then ".length" at the end. The reason why is because arrays are secretly objects. When you type an array, what you see is something like:
+```js
+var array = [3, 1, 4];
+```
+But behind the hood, it's actually like:
+```js
+var array = {
+    "0": 3,
+    "1": 1,
+    "2": 4,
+    "length": 3
+};
+```
+Weird, right? But back to topic, you get the properties of objects by typing the object name, a ".", and then the property you want:
+```js
+println(prestonsBook.title); //returns "Not so Fantastic Bugs and Where to Find Them"
+println(prestonsBook.author); //returns "Bobert Rossert"
+println(prestonsBook.numOfPages); //returns 271828
+
+//if you want to get the properties of anything in the "ratings" property, you have to do it like this:
+println(prestonsBook.ratings.average); //returns 3
+println(prestonsBook.ratings.preston); //returns 5
+println(prestonsBook.ratings.array[0]); //returns the first rating
+```
+So if you need a way of grouping variables that describe the same thing, you can use objects to fulfil your OBJECTive (get it?).
