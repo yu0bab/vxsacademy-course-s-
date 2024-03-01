@@ -19,8 +19,8 @@ So the second value is the X, and the third is the Y, just like with ellipse and
 Although it's actually slightly different. With rect, the X and Y are the top left
 corner, but with text, it's the bottom left. Weird, I know, but I don't make the rules.
 
-But the text right now is too small for me. How do we change the size. We just use the
-textSize command, like this:
+But the text right now is too small for me. We can use the textSize command to change
+the size, like this:
 ```js
 //the value is the size we want for the text.
 textSize(20);
