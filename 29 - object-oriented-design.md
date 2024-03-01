@@ -66,4 +66,21 @@ cats.forEach(function(v, i){
     drawCat(v);
 });
 ```
-Hmm... look at the cats array. Each cat is basically the same when it comes to code: it's just an X and Y, a color, and a name. 
+Hmm... look at the cats array. Each cat is basically the same when it comes to code: it's just an X and Y, a color, and a name. Is there a way we can simplify this?
+
+# Object Oriented Design
+There are a lot of things that share the same properties. For example, all vehicles have a brand name, a certain amount of people they can seat, a type of terrain they drive on (land, sky, and water), and a type (car, truck, plane, boat, etc.). Characters in a game also share the same properties, like their race, gender, role, strength, health, etc. So it would be nice to be able to just describe a type of object, like a vehicle, character, or cat, and all of the properties it can have, and just assign the values to something when we want to create a new object of that type. Luckily, we can do that with what's known as Object Oriented Design. First, we want to create a function we will call whenever we want to create a new object of a certain type. In our case, we're creating cat objects:
+```js
+//this function will create a new cat object
+var cat = function(x, y, color, name){
+    //the "this" keyword will refer to the new cat object we will create.
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.name = name;
+};
+```
+And then we want to create a cat with this function, which is done like this:
+```js
+var exampleCat = new cat(200, 200, color(20, 20, 20), "boring example cat");
+```
