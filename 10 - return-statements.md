@@ -18,12 +18,12 @@ Hmm, I'm doing a lot of multiplying by 1200 in this code. It'd be nice to be abl
 # Return Satements
 A return statement is something you can use to output a value out of a function. Here's how you make and use one:
 ```js
-var functionName = function(){ //you can use paramters in it just like with normal functions
+var answerToEverything = function(){ //you can use paramters in it just like with normal functions
   return 42; //change the 42 to whatever you want this to output. It can also make it spit out text if you want.
 };
 
 fill(0, 0, 0);
-text(functionName(), 20, 20); //you should see 42 on the screen, because that's what we told the return statement to output.
+text(answerToEverything(), 20, 20); //you should see 42 on the screen, because that's what we told the return statement to output.
 ```
 So I'm going to make a return statement called numOfCandies that will tell us how many candies he can eat in however many hours we give it, like so:
 ```js
