@@ -1,7 +1,8 @@
 # What Are Functions?
 So let's talk about something you already know but don't know the name of: functions.
 We've been using functions this whole time! Rect, ellipse, line, and text are all examples of functions.
-They are chunks of code that were given a name so we can use them more easily. Behind the scenes, the rect function is actually just 4 lines. Aren't you glad that you only have to type "rect(200, 200, 20, 20);" instead of 4 lines?
+They are chunks of code that were given a name so we can use them more easily. Behind the scenes, the rect function is actually just 4 lines. Aren't you glad that you only have to type "rect(200, 200, 20, 20);" instead of 
+having to draw 4 lines?
 
 In a way, we use functions in our daily lives. When you make breakfast, you probably get a bowl, pour cereal, pour milk, and get a spoon to eat it with. That’s a function, because a list of instructions grouped together and given a name: making breakfast. You don’t have to say the entire procedure, because everyone will understand you if you say "making breakfast"
 
@@ -45,7 +46,7 @@ var drawPreston = function(){
 ```
 Try out that code. You'll notice that nothing happens, because we need to tell the computer to actually use the drawPreston function (programmers like saying that we call, or run, the function). We do that in the same way we run the rect or ellipse function:
 ```js
-//make sure that you have the "var drawPreston = ..." part before this, or else the computer won't get what you mean
+//make sure that you have the drawPreston function before this, or else the computer won't get what you mean
 drawPreston();
 ```
 Hey cool, it's drawing Preston again! And what's better, we can run the function again to get 2 Prestons. But if you were to try that (and I would encourage you to), you would notice that you only see 1 Preston. Why? Well, think about it: we didn’t change X or Y for the second Preston, so they were drawn on top of each other. How can we change the X and Y values?
