@@ -1,4 +1,4 @@
-# Intro
+# Arrays of objects
 Remember the object I made for Preston's cat, Oreo? Well I think the other cats feel left out, so I made a program that has all of Preston's cats on it:
 ```js
 var cat = function(x, y, furCol, name){ //furCol is short for "fur color"
@@ -47,3 +47,7 @@ var catYvalues = [100, 100, 300, 300];
 var catColValues = [color(66, 41, 20), color(92, 47, 5), color(191, 97, 15), color(90, 99, 32)];
 var catNameValues = ["Oreo", "Chester", "Jasper", "Thomas"];
 ```
+Hmm, I mean, it works but it doesn't seem like a great way to do it. You can't easily tell which X position is for Oreo, or which color is for Jasper. And if Preston were to get a new cat, it would be a pain to add the new cat in.
+
+Let's represent the data for the cats in a different way. Instead of an array for each thing we want to know for each cat, how about we have a single array, and each element in the array is an object representing a single cat. 
+
