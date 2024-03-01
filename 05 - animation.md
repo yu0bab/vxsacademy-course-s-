@@ -37,10 +37,10 @@ draw = function(){
   //anything you want to draw a bunch of times a second goes here.
 };
 ```
-We'll talk about it later, but a function stores a group of code we can use later, like a variable. The "draw"
-is a special one that will allow us to animate our rocket. So put the rocket and stickman inside a draw function
-(and leave "var y = 100;" outside). Nothing happens. That's because we're not changing the y variable, so the
-rocket stays in place.
+We'll talk about it later, but a function stores a group of code we can use later, like how variables store 
+values. The "draw" is a special one that will allow us to animate our rocket. So put the rocket and stickman
+inside a draw function (and leave "var y = 100;" outside). Nothing happens. That's because we're not changing
+the y variable, so the rocket stays in place.
 
 # Updating Variables
 We need to change the y variable if we want to see the rocket move. How do we do that? Like this:
@@ -73,12 +73,12 @@ draw = function(){
   ellipse(210, 185+y, 10, 10);
   ellipse(200, 200+y, 20, 10);
 
-  y = y - 1;
+  y = y - 1; // <--------- this is where we update the y value
 };
 ```
-Yay, now we're going to the moon! But hold on... why does it look like the rocket's getting smeared?
-That's because we forgot to reset the canvas every time we draw by using "background(255, 255, 255);".
-Add a background command right before the rocket and it should look fine.
+Yay, now we're going to the moon! But hold on... why does it look like the rocket's getting smeared
+across the screen? That's because we forgot to reset the canvas every time we draw by using
+"background(255, 255, 255);". Add a background command right before the rocket and it should look fine.
 
 # Shorthand
 A pro tip, a short way for typing "y = y - 1;" is "y -= 1;". Same goes with addition, "y = y + 1;" is
