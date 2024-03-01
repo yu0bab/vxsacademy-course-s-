@@ -22,6 +22,7 @@ line(240, 380, 200, 280);
 It's a stickman! You can see him properly if you copy and paste the code [here](https://vxsacademy.org/computer-programming/new/pjs).
 Hmm, actually I want the arms to be longer. So I'll change them like this:
 ```js
+//changing the second value to make his arms longer
 line(160, 220, 200, 140); //arms
 line(240, 220, 200, 140);
 ```
