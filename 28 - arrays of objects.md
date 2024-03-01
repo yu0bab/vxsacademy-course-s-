@@ -49,5 +49,34 @@ var catNameValues = ["Oreo", "Chester", "Jasper", "Thomas"];
 ```
 Hmm, I mean, it works but it doesn't seem like a great way to do it. You can't easily tell which X position is for Oreo, or which color is for Jasper. And if Preston were to get a new cat, it would be a pain to add the new cat in.
 
-Let's represent the data for the cats in a different way. Instead of an array for each thing we want to know for each cat, how about we have a single array, and each element in the array is an object representing a single cat. 
+Let's represent the data for the cats in a different way. Instead of an array for each thing we want to know for each cat, how about we have a single array, and each element in the array is an object representing a single cat:
+```js
+var cats = [
+    {
+        x: 100,
+        y: 100,
+        color: color(66, 41, 20),
+        name: "Oreo"
+    },
+    {
+        x: 100,
+        y: 300,
+        color: color(92, 47, 5),
+        name: "Chester"
+    },
+    {
+        x: 300,
+        y: 100,
+        color: color(191, 97, 15),
+        name: "Jasper"
+    },
+    {
+        x: 300,
+        y: 300,
+        color: color(90, 99, 32),
+        name: "Thomas"
+    }
+];
+```
+Ok now let's loop through it. Again, I'm going to ask the 3 questions when looping:
 
