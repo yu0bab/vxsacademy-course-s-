@@ -1,5 +1,5 @@
 # Math Warning
-**WARNING:** Lots of math in this article. If you want to skip and go to the
+**WARNING:** Lots of math in this lesson. If you want to skip and go to the
 next one, you have my permission.
 
 # Intro
@@ -18,11 +18,11 @@ So how do we go about resizing his head? Like always, try doing it yourself.
 (+ is addition, - is subtraction, * is multiplication, and / is division)
 
 # Resizing With Math - Size
-So there's two things we need to figure out for the 4 ellipses: their position
-(X and Y) and their dimensions (width and height). I'll start with dimensions
-because it's easier. When you scale any shape by a factor of 2, the width and
-height of that shape also go up by a factor of 2. In other words, we multiply
-the width and height by 2:
+So there's two things we need to figure out for the 4 ellipses that make up
+the face: their position (X and Y) and their dimensions (width and height).
+I'll start with dimensions because it's easier. When you scale any shape by
+a factor of 2, the width and height of that shape also go up by a factor of
+2. In other words, we multiply the width and height by 2:
 ```js
 var scaleFactor = 2;
 
@@ -42,9 +42,9 @@ of the shapes as well.
 We want to scale at the center of the screen because that looks the nicest.
 The face is at the center, so it won't move. What about everything else? Well,
 we'll need to specify how far left/right and up/down each shape is from the
-center. I'm going to focus on the left eye (ellipse with an X value of 180)
+center. I'm going to focus on the left eye (the ellipse with an X value of 180)
 When it's at a scale factor of 1 (meaning we didn't scale), the left eye's X
-is at 180, which is 200 - 180 which is 20 pixels to the left. What happens when
+is at 180, which is 200 - 180 = 20 pixels to the left. What happens when
 we change the scale factor? Well, so does this amount of pixels to the left.
 That means that the equation for the X position is 200-20*scaleFactor. And it's
 the same for the Y, so we have:
