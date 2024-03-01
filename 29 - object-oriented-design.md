@@ -84,3 +84,12 @@ And then we want to create a cat with this function, which is done like this:
 ```js
 var exampleCat = new cat(200, 200, color(20, 20, 20), "boring example cat");
 ```
+Let's do that with Preston's cats now:
+```js
+var cats = [
+    new cat(100, 100, color(66, 41, 20), "Oreo"),
+    new cat(300, 100, color(92, 47, 5), "Chester"),
+    new cat(100, 300, color(191, 97, 15), "Jasper"),
+    new cat(300, 300, color(90, 99, 32), "Thomas")
+];
+```
