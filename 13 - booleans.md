@@ -61,7 +61,7 @@ if(100 !== 78){ //checks if two numbers are NOT equal. I don't know why there's 
 
 Make sure you're putting a boolean or a comparison of 2 numbers (which is just a boolean in disguise) in an if statement, because putting anything else doesn't make sense:
 ```js
-//these don't make sense, but the computer doesn't care.
+//these examples don't make sense, but the computer doesn't care.
 fill(125, 125, 125);
 
 //what does "if 4" mean? lol
@@ -86,12 +86,12 @@ fill(255, 0, 255);
 var prestonName = "Preston";
 
 if(prestonName === "Preston"){
-  //name equals "Preston", so this will run.
+  //prestonName equals "Preston", so this will run.
   text("His name is Preston", 100, 50);
 }
 
 if(prestonName !== "Prof. Cobra"){
-  //name doesn't equal "Prof. Cobra", so this will run.
+  //prestonName doesn't equal "Prof. Cobra", so this will run.
   text("His name isn't Prof. Cobra", 100, 100);
 }
 
