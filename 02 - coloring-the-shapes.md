@@ -22,7 +22,7 @@ background(255, 0, 255);
 The 3 values in the fill and stroke functions are the red, green, and blue values
 respectively. You know how red and blue make purple? Well, that's actually for things
 like paint. Your screen is emmiting light, so it's actually different: red and blue
-make magenta when it comes to light. Here's some values to get you started:
+make magenta when it comes to light. Here's some examples:
 ```js
 fill(255, 255, 255); //white
 fill(128, 128, 128); //gray
@@ -56,6 +56,7 @@ fill(0, 255, 255); //cyan
     1000  <- 1x8 + 0x4 + 0x2 + 0x1 = 8
 
   For these colors, the computer maxes out at 8 digits per value, which is 11111111 in binary, or 255.
+  If you want to learn more, [Khan Academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:binary-numbers/a/bits-and-binary) has a course on it.
 </details>
 
 # Stroke Thickness
