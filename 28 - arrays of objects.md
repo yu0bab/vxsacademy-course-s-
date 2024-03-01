@@ -116,4 +116,4 @@ cats.forEach(function(v, i){
     drawCat(v);
 });
 ```
-So not only do we get automated code
+So not only do we get automated code, but simple code as well!
