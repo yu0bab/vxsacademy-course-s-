@@ -91,4 +91,29 @@ for(var i = 0; i < cats.length; i ++){
     drawCat(cat.x, cat.y, cat.color, cat.name);
 }
 ```
+There we go, now we have fully automated the drawing of cats! And what's better, if Preston adopts another cat, we can just add another object into the cats array.
 
+And we can actually make our code even simpler, due to the fact that you can use an object as a parameter (remember, parameters are the values you put into functions). We can replace all the parameters in the drawCat function with a single object paramter, like this:
+```js
+var drawCat = function(catObj){ //obj stands for object
+    var x = catObj.x;
+    var y = catObj.y;
+    var furCol = catObj.furCol;
+    var name = catObj.name;
+
+    //I'm not displaying all the code in this function, because it's just too much
+};
+```
+And we also have to change the part where we call the function accordingly:
+```js
+for(var i = 0; i < cats.length; i ++){
+    drawCat(cats[i]);
+}
+```
+And if you remember the lesson where we talked about the forEach method, we can simplify this even further:
+```js
+cats.forEach(function(v, i){
+    drawCat(v);
+});
+```
+So not only do we get automated code
