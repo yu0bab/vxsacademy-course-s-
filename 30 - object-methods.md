@@ -111,6 +111,14 @@ You know what? Since we can, let's add another method, a meow method:
 ```js
 cat.prototype.meow = function(){
     fill(0, 0, 0);
-    text("Meow", this.x, this.y);
+    text("Meow", this.x-20, this.y+70);
 };
 ```
+And we can call the method in the same way:
+```js
+cats.forEach(function(v){
+    v.draw();
+    v.meow();
+});
+```
+So now not only do we have parameters that they all share, but they also have methods we can call whenever we want! It's pretty darn awesome.
