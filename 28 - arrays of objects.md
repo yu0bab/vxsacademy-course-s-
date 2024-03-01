@@ -98,7 +98,7 @@ And we can actually make our code even simpler, due to the fact that you can use
 var drawCat = function(catObj){ //obj stands for object
     var x = catObj.x;
     var y = catObj.y;
-    var furCol = catObj.furCol;
+    var furCol = catObj.color;
     var name = catObj.name;
 
     //I'm not displaying all the code in this function, because it's just too much
