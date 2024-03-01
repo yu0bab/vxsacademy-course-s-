@@ -61,8 +61,8 @@ Remember how I was talking about how types of things have similar properties, li
 Remember when I was talking about arrays, and arrays have these special functions called "methods", like push, and shift? We can also add methods to our cat object type. Here's how you do it:
 ```js
 //"prototype" is a special keyword you type when making methods.
-cat.prototype.print = function(){
-    println("Meow");
+cat.prototype.method = function(){
+    println("Hey lookie there, you used the meow-thed");
 };
 ```
 Let's do that with the drawCat function:
@@ -88,4 +88,29 @@ var array = [1, 2, 3];
 //you don't have to put in the array you're calling the method on like this, you just have to do "array.pop();"
 array.pop(array);
 ```
+So let's look back at the draw method. How can we change the code so we don't have to pass in a cat object? You might recall the "this" keyword, and that it refers to the newly created cat object. So let's use that:
+```js
+cat.prototype.draw = function(){
+    var x = this.x;
+    var y = this.y;
+    var furCol = this.furCol; //furCol is short for "fur color"
+    var name = this.name;
 
+    //...
+};
+
+cats[0].draw();
+```
+Eureka! Using the "this" keyword works! "This" is awesome (pun intended). Let's make it so it loops through all the cats now:
+```js
+cats.forEach(function(v){
+    v.draw();
+});
+```
+You know what? Since we can, let's add another method, a meow method:
+```js
+cat.prototype.meow = function(){
+    fill(0, 0, 0);
+    text("Meow", this.x, this.y);
+};
+```
