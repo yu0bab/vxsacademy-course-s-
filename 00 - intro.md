@@ -7,7 +7,7 @@ languages out there like Javascript, Python, C++, and Java (all of which are tau
 We will be using "Processing.js", which is a tool made for Javascript (one of the programming languages) to draw stuff,
 and even create animations! Don't worry, both Javascript and Processing.js use english words, so it should be easy to learn.
 
-# Why should I learn?
+# Why should I learn programming?
 Think of all the things that are done with computers: websites, games, apps, robots, the internet, 3D animation, they're used
 to make the special effects for movies, and they even put the first person on the moon! So if you want to learn how to make
 computers to do anything like that, you're in the right place!
