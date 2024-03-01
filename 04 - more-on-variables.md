@@ -42,7 +42,7 @@ var shoulderHeight = 140;
 line(200-armDistance, armHeight, 200, shoulderHeight); //arm that's to the left of the body
 line(200+armDistance, armHeight, 200, shoulderHeight); //arm that's to the right of the body
 ```
-
-Now try experimenting. See what other variables you can use for the stickman. Maybe one for
-the height of his waist, or the size of his head, or maybe even his color. Then try changing
-the variables you make, see what kinds of stickmen you can create.
+Yay, now we can control how far his arms are from his body! Now try experimenting. See what
+other variables you can use for the stickman. Maybe one for the height of his waist, or the
+size of his head, or maybe even his color. Then try changing the variables you make, see
+what kinds of stickmen you can create.
