@@ -93,3 +93,13 @@ var cats = [
     new cat(300, 300, color(90, 99, 32), "Thomas")
 ];
 ```
+And here's where the magic of Object Oriented Design comes in: let's say that I want all of them to have their last name Smith included. I could simply change the cat creating function like this:
+```js
+var cat = function(x, y, color, name){
+    this.x = x;
+    this.y = y;
+    this.color = color;
+    this.name = name + " Smith"; //all I did was add " Smith" to this one line, and now all 4 cats have " Smith" at the end of their names.
+};
+```
+See how nice Object Oriented Design is? All the cats share similar properties, and yet, they are all individual cats, and Object Oriented Design respects that about them.
