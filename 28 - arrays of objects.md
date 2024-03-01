@@ -40,7 +40,7 @@ drawCat(300, 100, color(92, 47, 5), "Chester");
 drawCat(100, 300, color(191, 97, 15), "Jasper");
 drawCat(300, 300, color(90, 99, 32), "Thomas");
 ```
-Hmm, look at the last 4 lines of the code. I can't help but to notice how repeatable that is. And when I see repeatable code, I can't help but to wonder if I can use a loop. We have 4 different things to store for each cat (x, y, color, and name), so I'll make 4 different arrays to store it all:
+Hmm, look at the last 4 lines of the code. I can't help but to notice how repeatable that is, so I wonder if I can use a loop. We have 4 different things to store for each cat (x, y, color, and name), so I'll make 4 different arrays to store it all:
 ```js
 var catXvalues = [100, 300, 100, 300];
 var catYvalues = [100, 100, 300, 300];
