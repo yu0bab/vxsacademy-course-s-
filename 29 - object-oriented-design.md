@@ -4,7 +4,7 @@ Remember the program from last lesson that draws Preston's cats onto the screen?
 var drawCat = function(catObj){ //obj stands for object
     var x = catObj.x;
     var y = catObj.y;
-    var furCol = catObj.furCol; //furCol is short for "fur color"
+    var furCol = catObj.color; //furCol is short for "fur color"
     var name = catObj.name;
 
     strokeWeight(1); //head
