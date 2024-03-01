@@ -1,7 +1,7 @@
 # Arrays of objects
 Remember the object I made for Preston's cat, Oreo? Well I think the other cats feel left out, so I made a program that has all of Preston's cats on it:
 ```js
-var cat = function(x, y, furCol, name){ //furCol is short for "fur color"
+var drawCat = function(x, y, furCol, name){ //furCol is short for "fur color"
     //head
     strokeWeight(1);
     fill(furCol); //remember when I was talking about variables and how you can store colors in variables with the color function?
@@ -35,10 +35,10 @@ var cat = function(x, y, furCol, name){ //furCol is short for "fur color"
     text(name, x-34, y-58);
 };
 
-cat(100, 100, color(66, 41, 20), "Oreo");
-cat(300, 100, color(92, 47, 5), "Chester");
-cat(100, 300, color(191, 97, 15), "Jasper");
-cat(300, 300, color(90, 99, 32), "Thomas");
+drawCat(100, 100, color(66, 41, 20), "Oreo");
+drawCat(300, 100, color(92, 47, 5), "Chester");
+drawCat(100, 300, color(191, 97, 15), "Jasper");
+drawCat(300, 300, color(90, 99, 32), "Thomas");
 ```
 Hmm, look at the last 4 lines of the code. I can't help but to notice how repeatable that is. And when I see repeatable code, I can't help but to wonder if I can use a loop. We have 4 different things to store for each cat (x, y, color, and name), so I'll make 4 different arrays to store it all:
 ```js
@@ -79,4 +79,16 @@ var cats = [
 ];
 ```
 Ok now let's loop through it. Again, I'm going to ask the 3 questions when looping:
+1. What do I want to loop? The function that draws cats.
+2. How long should it loop? For as many cats as there are.
+3. What should change? The cat we're drawing.
+
+Alright so let's make the loop:
+```js
+var cat = {}; //a variable to store the current cat we're drawing to make things easier to read
+for(var i = 0; i < cats.length; i ++){
+    cat = cats[i];
+    drawCat(cat.x, cat.y, cat.color, cat.name);
+}
+```
 
