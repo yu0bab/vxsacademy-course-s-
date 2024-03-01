@@ -69,7 +69,7 @@ cats.forEach(function(v, i){
 Hmm... look at the cats array. Each cat is basically the same when it comes to code: it's just an X and Y, a color, and a name. Is there a way we can simplify this?
 
 # Object Oriented Design
-There are a lot of things that share the same properties. For example, all vehicles have a brand name, a certain amount of people they can seat, a type of terrain they drive on (land, sky, and water), and a type (car, truck, plane, boat, etc.). Characters in a game also share the same properties, like their race, gender, role, strength, health, etc. So it would be nice to be able to just describe a type of object, like a vehicle, character, or cat, and all of the properties it can have, and just assign the values to something when we want to create a new object of that type. Luckily, we can do that with what's known as Object Oriented Design. First, we want to create a function we will call whenever we want to create a new object of a certain type. In our case, we're creating cat objects:
+There are a lot of things that share similar properties. For example, all cars have a brand name, a certain amount of people they can seat, a type of terrain they drive on (land, sky, and water), and a type (sports car, station wagon, convertable, etc.). Characters in a game also share similar properties, like race, gender, role, strength, health, etc. So it would be nice to be able to just describe a type of object, like a car, character, or cat, and all of the properties it can have, and just assign the values to something when we want to create a new object of that type. Luckily, we can do that with what's known as Object Oriented Design. First, we want to create a function we will call whenever we want to create a new object of a certain type. In our case, we're creating cat objects:
 ```js
 //this function will create a new cat object
 var cat = function(x, y, color, name){
@@ -99,7 +99,7 @@ var cat = function(x, y, color, name){
     this.x = x;
     this.y = y;
     this.color = color;
-    this.name = name + " Smith"; //all I did was add " Smith" to this one line, and now all 4 cats have " Smith" at the end of their names.
+    this.name = name + " Smith"; //all I did was add " Smith" to this one line, and now all 4 cats have it.
 };
 ```
 See how nice Object Oriented Design is? All the cats share similar properties, and yet, they are all individual cats, and Object Oriented Design respects that about them.
