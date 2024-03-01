@@ -7,14 +7,14 @@ left something is, and also how far up and down it is.
 
 Us programmers like consistancy, so we use a <strong>reference point</strong>, which is a point we all
 agree on for the Coordinate system. So instead of saying "1 inch to the right of my paper", you would
-say "1 inch to the right of the reference point". In Processing.js, the reference point is always
-in the top left corner.
+use the paper as a reference point, and say "1 inch to the right of the reference point". In
+Processing.js, the reference point is always in the top left corner.
 
 The left/right value is called the X vlaue, and up/down is called the Y value.
 
 # Basic Shapes
-There are several shapes you can make with Processing.js, like rectangles, ellipses (or ovals), lines,
-and if you stick with me, even custom shapes! I'll start you off with rectangles.
+There are several shapes you can make with Processing.js, like rectangles, ellipses (or ovals), and lines.
+I'll start you off with rectangles.
 
 To make rectangles, you write this (try it out for youself [here](https://vxsacademy.org/computer-programming/new/pjs)):
 ```js
@@ -28,9 +28,9 @@ right the square is (the X value), the second one is how far up or down it is (t
 one is the width, and the fourth one is the height.
 
 "Ok, but are we measuring in Meters? Feet? Milimeters? Inches?". Actually, we're measuring in pixels.
-If you don't know, pixels are tiny little squares that make up the screen you're looking at. Try
+If you didn't know, pixels are tiny little squares that make up the screen you're looking at. Try
 getting close to your screen, you might see them. The canvas is 400 pixels wide and 400 pixels tall,
-but you can change that by clicking on the "settings" button under your code.
+but you can change that by clicking on the "settings" button below your code.
 
 So that's a rectangle, but that's not very exciting all by itself. So let me show you how to make ellipses
 as well (again, try it out for yourself):
@@ -60,7 +60,7 @@ little tool that allows us to organize our code better, called comments. You wri
 //this is a comment
 ```
 A comment is a note for programmers so they know what certain chunks of code do. The computer ignores
-them completely.
+them completely because it's just for the humans.
         
 So now that you know how to draw rectangles, ellipses, and lines, see what you can make with them! Maybe a face, a robot,
 a cookie, a pizza, or a donut. Yeah I know, it's kinda boring without color, but we'll get to that in the next lesson.
