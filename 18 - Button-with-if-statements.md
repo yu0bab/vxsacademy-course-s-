@@ -54,5 +54,5 @@ if(mouseIsPressed && mouseX > 100 && mouseX < 300 && mouseY > 300 && mouseY < 40
   text("Yay, you clicked me!", 110, 290);
 }
 ```
-Yay, now we have a working button! Buttons are very useful to make things interactive.
+Yay, now we have a working button! Buttons are very useful to make things interactive, so that's another tool for your programming toolbelt.
 
