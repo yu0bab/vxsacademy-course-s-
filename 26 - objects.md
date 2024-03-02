@@ -22,7 +22,7 @@ var genre = "Science nonfiction. Not to be confused with science fiction.";
 Sounds like a cool book! But hmm, all of these variables are talking about the same thing: the book. I think there should be a better way to describe all these variables since they're talking about the same thing. Luckily, there is another way to describe them: objects!
 
 # Objects
-And object in Javascript is a way of storing multiple values in one variable, like arrays. But instead of a list of things like arrays, an object stores properties of things. Let me show you how to make one with an example:
+An object in Javascript is a way of storing multiple values in one variable, like arrays. But instead of a list of things like arrays, an object stores properties of things. Let me show you how to make one with an example:
 ```js
 var preston = {
     //These 3 things, name, age, and height, are all properties
