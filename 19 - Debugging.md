@@ -117,7 +117,7 @@ And now not only is the door working, but now you know how to debug your program
 # Bonus Tips for Debugging
 There's many useful things you can do to help you with debugging. For example, you could tell the problem to one of your stuffed animals. The act of simply saying your problem in words helps a lot of programmers to figure out what the problem is.
 
-Another trick is using the functions like rect, ellipse, text, etc. to display information visually, instead of using println. Like they say, a picture is worth a thousand words
+Another trick is using the functions like rect, ellipse, text, etc. to display information visually, instead of using println. Like they say, a picture is worth a thousand words.
 
 And here's a trick I like to use: If I don't know where the problem is, I comment out code that might be the problem (Pro Tip: you can select the text you comment out, and do ctrl + / to comment it instantly. You can do the same thing to uncomment it). If I don't see the problem anymore, I must have commented it out, so I found where the bug is! Just make sure that when you do this, you're not causing other problems unintentionally.
 
