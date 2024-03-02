@@ -17,6 +17,7 @@ Aight let's recall the 3 questions when making loops and answer them:
 1. What are we looping? (the text function)
 2. How long do we want to loop? (as many times as there are items in the Array)
 3. What do we want to change? (the item we're writing onto the screen)
+
 Ok so let's make the loop:
 ```js
 //start the variable i at 0, make it repeat until the end of the array, and count up every time.
