@@ -1,9 +1,9 @@
 # Logical Operators
 In the previous article, I talked about booleans and how to make them with comparison symbols (like < and ===). But let's say we want to combine booleans together, like how you can combine numbers together. How do we do that? One of the ways we can do that is checking if one boolean OR another is true. How we do that is by typing "||" (hold shift and press the \ key, which should be above the enter key).
 ```js
-//It's looking to see if one OR the other boolean is true
 fill(255, 125, 0);
 
+//It's looking to see if one OR the other boolean is true
 if(false || false){
   //none of them are true, so this won't run
   text("false OR false", 100, 50);
@@ -20,7 +20,7 @@ if(false || true){
 }
 
 if(true || true){
-  //both true, so this will run
+  //both are true, so this will run
   text("true OR true", 100, 200);
 }
 ```
@@ -89,7 +89,7 @@ if(ballX < 0){
     ballX = 400 + 2; //have the ball a bit to the right when it exits the right portal
 }
 ```
-If you replace the if statements with that, you'll see that when the ball goes into the right portal, it just stops. Are the if statements not working anymore? No, I can assure you that they're still working. Let me show you what the computer is doing when it sees these new if statements:
+If you replace the code with that, you'll see that when the ball goes into the right portal, it just stops. Are the if statements not working anymore? No, I can assure you that they're still working. Let me show you what the computer is doing when it sees these new code:
 ```js
 //when it hits the right portal, ballX will be greater than 400
 
