@@ -20,7 +20,7 @@ Hmm, it prints out as "Programming,Math,Science,Art,Gaming". That's great and al
 ```js
 println(favActivities[1]); //prints out "Math"
 ```
-Hold up, "Math" isn't the first thing in the array, "Programming" is! What's going on here? Well in javascript, arrays actually start at 0, not 1 (weird, I know). So you put in 0 for the first thing, 1 for the second thing, 2 for the third thing, etc. Replace the 1 with a 0 in the println function and you should see that it works just fine, printing "Programming" as we want it to.
+Hold up, it's printing out "Math", but "Math" isn't the first thing in the array, "Programming" is! What's going on here? Well in javascript, arrays actually start at 0, not 1 (weird, I know). So you put in 0 for the first thing, 1 for the second thing, 2 for the third thing, etc. Replace the 1 with a 0 in the println function and you should see that it works just fine, printing "Programming" as we want it to.
 
 Ok, so now that we know how to use Arrays, let's do something with it! I'm going to write text on the screen showing everything that Preston likes:
 ```js
@@ -42,10 +42,10 @@ Once you use arrays more, you'll might accidentally input a number that makes no
 ```js
 var fruits = ["Apple", "Banana", "Orange"];
 println(fruits[5]); //this outputs "undefined", because there is no 6th element of the array. It only goes up to 3.
-println(fruits[-1]); //this outputs "undefined", because 0 is the smallest order number.
-println(fruits[0.5]); //this outputs "undefined", because order numbers are always whole numbers.
+println(fruits[-1]); //this outputs "undefined", because 0 is the smallest index number.
+println(fruits[0.5]); //this outputs "undefined", because index numbers are always whole numbers.
 ```
-You can avoid this by either changing the number you put in so it does make sense, or by using an if statement:
+You can avoid this by either changing the number you put in so it does make sense, or by using an if statement like so:
 ```js
 var fruits = ["Apple", "Banana", "Orange"];
 var i = 3.14;
