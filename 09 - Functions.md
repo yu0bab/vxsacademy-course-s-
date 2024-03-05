@@ -54,7 +54,7 @@ Hey cool, it's drawing Preston again! And what's better, we can run the function
 # Parameters
 For the rect and ellipse functions, we can put in some numbers describing the position and size of them. With fill and stroke, we can put in 3 numbers describing the color we want. The numbers you put into functions are called parameters. This is how you can make parameters for custom functions:
 ```js
-//the parameters can be used just like varaibles.
+//the parameters can be used just like variables.
 var functionName = function(parameter, anotherParameter){
     //code goes here
 }
