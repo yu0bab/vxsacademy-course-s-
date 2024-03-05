@@ -58,7 +58,7 @@ Ah, much better!
 Computers read the code top to down, so make sure you make the variable before
 you use it:
 ```js
-//The computer is thinking "Uh oh, the variable 'eyesSize' wasn't made yet".
+//The computer is thinking "Uh oh, the variable 'armHeight' wasn't made yet".
 line(160, armHeight, 200, 140); //arms
 line(240, armHeight, 200, 140);
 
