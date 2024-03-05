@@ -10,7 +10,8 @@ agree on for the Coordinate system. So instead of saying "1 inch to the right of
 use the paper as a reference point, and say "1 inch to the right of the reference point". In
 Processing.js, the reference point is always in the top left corner.
 
-The left/right value is called the X vlaue, and up/down is called the Y value.
+The left/right value is called the X vlaue, and up/down is called the Y value. Increasing the X value
+will make it go more to the right, and increasing the Y value will make it go downwards
 
 # Basic Shapes
 There are several shapes you can make with Processing.js, like rectangles, ellipses (or ovals), and lines.
