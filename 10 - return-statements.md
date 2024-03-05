@@ -18,7 +18,7 @@ Hmm, I'm doing a lot of multiplying by 1200 in this code. It'd be nice to be abl
 # Return Satements
 A return statement is something you can use to output a value out of a function. Here's how you make and use one:
 ```js
-var answerToEverything = function(){ //you can use paramters in it just like with normal functions
+var answerToEverything = function(){ //you can use parameters in it just like with normal functions
   return 42; //change the 42 to whatever you want this to output. It can also make it spit out text if you want.
 };
 
