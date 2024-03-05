@@ -1,6 +1,6 @@
 # What is Programming?
-Programming, to put it simply, is a list of instructions we give to a computer. It's like a recipe for computers, and
-programmers are the "food artists" making the recipies.
+A program, to put it simply, is a list of instructions we give to a computer. It's like a recipe for computers, and
+programmers are the "food artists" making the recipies. Programming is the act of making these programs.
 
 A programming language, or computer language, is what you use to tell the computer what to do. There are many programming
 languages out there like Javascript, Python, C++, and Java (all of which are taught here on Vexcess Academy by the way).
