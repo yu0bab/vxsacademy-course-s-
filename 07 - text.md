@@ -6,6 +6,9 @@ command. It goes like this:
 //NOTE: if you don't add the "" around the text you want, the computer will think
 //it's supposed to be a variable.
 text("text", 200, 200);
+
+//you can also make a string like this:
+text('text', 200, 200);
 ```
 The first value we put in it is the text we want to display. Us programmers call
 text "strings" (we're weird, don't ask). But what about the other two? As always,
