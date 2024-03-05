@@ -46,8 +46,10 @@ center. I'm going to focus on the left eye (the ellipse with an X value of 180)
 When it's at a scale factor of 1 (meaning we didn't scale), the left eye's X
 is at 180, which is 200 - 180 = 20 pixels to the left. What happens when
 we change the scale factor? Well, so does this amount of pixels to the left.
-That means that the equation for the X position is 200-20*scaleFactor. And it's
-the same for the Y, so we have:
+That means that the equation for the X position is 200 - 20*scaleFactor (remember
+learning about PEMDAS? Parentheses, Exponents, Multiplying/Dividing, and
+Adding/Subtracting? So 20\*scaleFactor is caldulated first, then the subtraction part).
+And it's the same for the Y, so we have:
 ```js
 var scaleFactor = 2;
 
