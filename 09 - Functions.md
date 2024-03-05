@@ -10,7 +10,7 @@ In a way, we use functions in our daily lives. When you make breakfast, you prob
 I want to make a clone of Preston. I modified the code for his face so we can easily put him anywhere we want:
 ```js
 var x = 200;
-var y = 2000;
+var y = 200;
 
 fill(0, 0, 0); //face color
 ellipse(x, y, 100, 100); //face
