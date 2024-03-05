@@ -52,7 +52,7 @@ drawPreston();
 Hey cool, it's drawing Preston again! And what's better, we can run the function again to get 2 Prestons. But if you were to try that (and I would encourage you to), you would notice that you only see 1 Preston. Why? Well, think about it: we didn’t change X or Y for the second Preston, so they were drawn on top of each other. How can we change the X and Y values?
 
 # Parameters
-For the rect and ellipse functions, we can put in some numbers describing the position and size of them. With fill and stroke, we can put in 3 numbers describing the color we want. The numbers you put into functions are called parameters. This is how you can make parameters for custom functions:
+For the rect and ellipse functions, we can put in some numbers describing the position and size of them. With fill and stroke, we can put in 3 numbers describing the color we want. The values you put into functions are called parameters. When you make a rect or ellipse function, the X, Y, width, and height are parameters to those functions. This is how you can make parameters for custom functions:
 ```js
 //the parameters can be used just like variables.
 var functionName = function(parameter, anotherParameter){
