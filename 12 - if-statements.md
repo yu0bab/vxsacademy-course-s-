@@ -32,7 +32,7 @@ if(condition){
     //code to run
 }
 ```
-If the condition is true, the code will run, or else it will ignore the code inside. But how do you write conditions? We'll talk a bit more about them later, but one of the symbols we use is the > symbol (hold Shift and press the button right below the L key on your keyboard). This symbol, called the "greater than" symbol sees if the number on the left is greater than the number on the right. We can use this symbol to see if the ball hits the right portal, because the X position will be greater than the width of the canvas, which is 400:
+If the condition is true, the code will run, otherwise it will ignore the code inside. But how do you write conditions? We'll talk a bit more about them later, but one of the symbols we use is the > symbol (hold Shift and press the button right below the L key on your keyboard). This symbol, called the "greater than" symbol sees if the number on the left is greater than the number on the right. We can use this symbol to see if the ball hits the right portal, because the X position will be greater than the width of the canvas, which is 400:
 ```js
 if(ballX > 400){
     ballX = 0;
