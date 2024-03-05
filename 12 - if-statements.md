@@ -12,7 +12,7 @@ draw = function(){
     fill(125);
     ellipse(ballX, 200, 60, 60); //ball
 
-    ballX += ballVelocity; //move the ball according to the speed
+    ballX += ballVelocity; //move the ball according to the velocity
 
     stroke(0, 0, 255);
     strokeWeight(20);
@@ -56,7 +56,7 @@ draw = function(){
     fill(125);
     ellipse(ballX, 200, 60, 60); //ball
 
-    ballX += ballVelocity; //move the ball according to the speed
+    ballX += ballVelocity; //move the ball according to the velocity
 
     if(ballX > 400){ //if the ball goes into the right portal, go to the left portal
         ballX = 0;
