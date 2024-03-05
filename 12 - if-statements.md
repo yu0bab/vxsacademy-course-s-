@@ -2,7 +2,7 @@
 Hey, check out what I'm working on. This code makes 2 portals, and there's a ball I want to go through them. **IF** you try out the code, you'll see that it doesn't work quite yet. **IF** I can figure out how to make this work, this will be pretty cool!
 ```js
 var ballX = 200;
-var ballSpeed = 2;
+var ballVelocity = 2;
 
 draw = function(){
     background(255, 255, 255);
@@ -12,7 +12,7 @@ draw = function(){
     fill(125);
     ellipse(ballX, 200, 60, 60); //ball
 
-    ballX += ballSpeed; //move the ball according to the speed
+    ballX += ballVelocity; //move the ball according to the speed
 
     stroke(0, 0, 255);
     strokeWeight(20);
@@ -38,7 +38,7 @@ if(ballX > 400){
     ballX = 0;
 }
 ```
-Put that code into the draw function, and you'll see that the ball goes through the portal! Now change "ballSpeed" to be -2 (that'll make it go the other way), and you'll see that now it's not working, because we didn't tell the computer what happens when the ball goes through the left portal. Let's fix that! We can use the < symbol (it's to the left of the > symbol on your keyboard), which is called the "less than" symbol. As you might have guessed, it sees if the number on the left is *less than* the number on the right. Let's use it to see if the ball goes through the left portal, meaning its X position will be less than 0:
+Put that code into the draw function, and you'll see that the ball goes through the portal! Now change "ballVelocity" to be -2 (that'll make it go the other way), and you'll see that now it's not working, because we didn't tell the computer what happens when the ball goes through the left portal. Let's fix that! We can use the < symbol (it's to the left of the > symbol on your keyboard), which is called the "less than" symbol. As you might have guessed, it sees if the number on the left is *less than* the number on the right. Let's use it to see if the ball goes through the left portal, meaning its X position will be less than 0:
 ```js
 if(ballX < 0){
     ballX = 400;
@@ -47,7 +47,7 @@ if(ballX < 0){
 Now let's put it all together!
 ```js
 var ballX = 200;
-var ballSpeed = 2;
+var ballVelocity = 2;
 
 draw = function(){
     background(255, 255, 255);
@@ -56,7 +56,7 @@ draw = function(){
     fill(125);
     ellipse(ballX, 200, 60, 60); //ball
 
-    ballX += ballSpeed; //move the ball according to the speed
+    ballX += ballVelocity; //move the ball according to the speed
 
     if(ballX > 400){ //if the ball goes into the right portal, go to the left portal
         ballX = 0;
